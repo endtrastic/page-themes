@@ -1,11 +1,13 @@
-import './App.css'
-import Page from './components/Page'
+import React from 'react';
+import { ThemeProvider } from './ThemeContext';
+import Page from './components/Page';
 
-function App() {
-
+const App = () => {
   return (
-    <Page />
-  )
-}
+    <ThemeProvider>
+        <Page />
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;
